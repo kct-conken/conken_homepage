@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<title>コンピュータ研究</title>
+</head>
+<body>
+<div id="body">
+	<div id="pageTop">
+		<section class="logo">
+			<a href="./index.html">
+				<img src="img/logo.png" width="100%" height="100%" class="aaa">
+			</a>
+		</section>
+	</div><!--pageTop-->
+	
+	<hr>
+	
+	<div id="pageBody">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="page/activitylog.html"><img src="img/elements/link1_ActivityLog.png"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="page/programs.html"><img src="img/elements/link2_Programs.png"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="page/gallery.html"><img src="img/elements/link3_Gallery.png"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="page/links.html"><img src="img/elements/link4_Links.png"></a>
+				</div>
+			</div><!--swiper_wrapper-->
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div><!--ボタン前-->
+			<div class="swiper-button-next"></div><!--ボタン後ろ-->
+		</div><!--swiper-container-->
+
+		<div class="twitter">
+			<a class="twitter-timeline"  href="https://twitter.com/ConkenHp" data-widget-id="696605101675253761" height="100%" data-chrome="nofooter noborders">@ConkenHpさんのツイート</a>
+		</div><!--twitter-->
+		
+		<div class="log">
+			<dl class="topics">
+				<dt>2018年02月08日</dt>
+					<a href="page/news.html" target="_blank">
+						<dd>　ドメイン名の変更について</dd>
+					</a>
+				<hr>
+				<dt>2016年02月09日</dt>
+					<dd>　コンピュータ研究部ホームページ公開!</dd>
+				<hr>
+		</dl>
+		</div><!--log-->
+	</div><!--pageBody-->
+	
+	<hr>
+	
+	<div class="footer">
+		Copyright (c) 2017 コンピュータ研究部 All Rights Reserved.
+	</div>
+</div><!--body-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script>
+   	var swiper = new Swiper('.swiper-container',{
+   		pagination: '.swiper-pagination',
+    	nextButton: '.swiper-button-next',
+   		prevButton: '.swiper-button-prev',
+   		slidesPerView: 1,
+   		paginationClickable: true,
+    	spaceBetween: 30,
+   		autoplay: 3000,
+       	loop: true
+    });
+</script>
+</body>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/template.css">
+	<title>コンピュータ研究</title>
+	<script type="text/javascript">
+		function ChangeTab(tabname){
+			document.getElementById('tab1').style.display = 'none';
+			document.getElementById('tab2').style.display = 'none';
+			document.getElementById('tab3').style.display = 'none';
+			
+			document.getElementById(tabname).style.display = 'block';
+		}
+		
+		function ChangeTabColor(tabname){
+			document.getElementsByClassName('tab1')[0].style.color = "#FFFFFF";
+			document.getElementsByClassName('tab1')[0].style.backgroundColor = "#4169E1";
+			document.getElementsByClassName('tab1')[0].style.border = "solid 2px #4169E1";
+			
+			document.getElementsByClassName('tab2')[0].style.color = "#FFFFFF";
+			document.getElementsByClassName('tab2')[0].style.backgroundColor = "#4169E1";
+			document.getElementsByClassName('tab2')[0].style.border = "solid 2px #4169E1";
+			
+			document.getElementsByClassName('tab3')[0].style.color = "#FFFFFF";
+			document.getElementsByClassName('tab3')[0].style.backgroundColor = "#4169E1";
+			document.getElementsByClassName('tab3')[0].style.border = "solid 2px #4169E1";
+			
+			document.getElementsByClassName(tabname)[0].style.color = "#000000";
+			document.getElementsByClassName(tabname)[0].style.backgroundColor = "#FAFFFF";
+			document.getElementsByClassName(tabname)[0].style.border = "solid 2px #4169E1";
+		}
+	</script>
+</head>
+<body>
+<div id="body">
+	<div id="pageTop">
+		<section class="logo">
+			<a href="../index.html">
+				<img src="../img/logo.png" width="100%" height="100%">
+			</a>
+		</section>
+		<section class="links">	
+			<div class="menu">
+				<img src="../img/menu.png" width="100%" height="100%">
+			</div>
+			<ul class="menu-list">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="./activitylog.html">ACTIVITY LOG</a></li>
+				<li><a href="./programs.html">PROGRAMS</a></li>
+				<li><a href="./gallery.html">GALLERY</a></li>
+				<li><a href="./links.html">LINKS</a></li>
+			</ul>
+		</section>
+	</div><!--pageTop-->
+	
+	<div id="pageBody">
+		ここではプログラム班の主な活動を紹介しています!!
+		
+		<div class="tabbox">
+			<p class="tabs">
+				<a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); ChangeTabColor('tab1'); return false;">GAMES</a>
+				<a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); ChangeTabColor('tab2'); return false;">SOFTWARES</a>
+				<a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); ChangeTabColor('tab3'); return false;">PROCON</a>
+			</p><!--tabs-->
+			
+			<div id="tab1" class="tab">
+				<dl>
+					<dt>
+						<p class="title">・Unityゲーム開発</p>
+					</dt>
+					<dd>
+						　Unityによる3Dゲーム開発を行っています。<br>
+						　練習のミニゲームとして、「コイン落とし」「FPSゲーム」「クレーンゲーム」などを作成しました。<br>
+						　今後は、プレイヤーが自由にマップを作成し、それで遊べる3Dアクションゲームを検討中です!!<br>
+					</dd>
+					
+					<br>
+					
+					<dt>
+						<p class="title">・VRゲーム開発</p>
+					</dt>
+					<dd>
+						　UnrealEngineによるVRゲーム制作を行っています。<br>
+						　VRを活用した、バランス感覚ゲームを作っています。<br>
+						　今後の目標は、遊び感覚で、バランス感覚のリハビリなどができるようにすることです!!<br>
+					</dd>
+				</dl>
+			</div><!--tab1-->
+			
+			<div id="tab2" class="tab">
+				<dl>
+					<dt>
+						<p class="title">・Androidアプリ開発</p>
+					</dt>
+					<dd>
+						　視覚障碍者の方への支援をされてらっしゃる豊永さんを初めとする方々と協力して、だれでも操作が簡単で使いやすいお薬手帳のAndroidアプリを開発しています。<br>
+						　使用言語は「Java」、「XML」、開発環境は「Android Studio」です。<br>
+						　正規表現を用いた文字列加工をしており、文字列加工の使用言語は「Java」、開発環境は「サクラエディタ」と「Mingw」です。<br>
+					</dd>
+					
+					<br>
+					
+					<dt>
+						<p class="title">・PowerPointの自動音声貼り付け</p>
+					</dt>
+					<dd>
+						　プレゼンテーションをするときに音声付きの説明動画を作る手間を省くため、自動で音声ファイルが作成するものを作っています。<br>
+						　Powar Pointに文字を書き込んで実行すれば、自動で音声が張り付けられるようになっているほか、作成した音声ファイルがほかのファイルに上書きされることがないように、Power Pointごとに別々の音声ファイルとして保存されるようにしています。<br>
+					</dd>
+					
+					<br>
+					
+					<dt>
+						<p class="title">・LeapMotion</p>
+					</dt>
+					<dd>
+						　LeapMotionとは赤外線センサを使い手や指を認識できるデバイスです。<br>
+						　両手と指10本を0.01ミリの精度で認識できるため、手の動きをコンピュータ内で再現したりなどが可能です。<br>
+						　使用言語は「Java」で現在は画像取得までできています。将来的にはどこでもフリック入力をできるようにすることが目標です。<br>
+					</dd>
+				</dl>
+			</div><!--tab2-->
+			
+			<div id="tab3" class="tab">
+				<dl>
+					<dt>
+						<p class="title">・プログラミングコンテスト</p>
+					</dt>
+					<dd>
+						　プログラミングコンテスト、通称プロコンは高等専門学校連合会が主催するもので、毎年我々の部活も参加しています。<br>
+						　2017年は10月8日(日)～9日(月)に山口県周南市にて行われます!!<br>
+						　(<a href="http://www.procon.gr.jp/" target="_blank">プロコンって？...</a>)<br>
+						　プロコンには部門が3つあり以下のように分かれています!<br>
+						
+						<br>
+						
+						<section class="procon">
+							<dt>1. 課題部門<dt>
+							<dd>
+								あるテーマに基づいて作られたコンピュータシステムのアイデアや技術を競う<br>
+								2017年のテーマ：<br>
+								「<a href="http://www.procon.gr.jp/?page_id=59121" target="_blank">スポーツで切り拓く明るい社会</a>」
+							</dd>
+							<br>
+							<dt>2. 自由部門</dt>
+							<dd>
+								自由な発想に基づいて作られたコンピュータシステムのアイデアや技術を競う<br>
+							</dd>
+							<br>
+							<dt>3. 競技部門</dt>
+							<dd>
+								主催者から提示される問題を解き、その点数などで競う<br>
+								2017年のテーマ：<br>
+								「<a href="http://www.procon.gr.jp/?page_id=59121" target="_blank">おいでませ,ホントの魅力へ</a>」
+							</dd>
+						</section><!--procon-->
+					</dd>
+				</dl>
+			</div><!--tab3-->
+		</div><!--tabbox-->
+		<script type="text/javascript">
+			ChangeTab('tab1');
+			ChangeTabColor('tab1');
+		</script>
+	</div><!--pageBody-->
+	
+	<hr>
+  
+	<div class="footer">
+		Copyright (c) 2018 コンピュータ研究部 All Rights Reserved.
+	</div>
+</div><!--body-->
+</body>

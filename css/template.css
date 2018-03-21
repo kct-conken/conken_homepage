@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@font-face{
+	font-family: 'Cubic';
+	src: url(../font/cubic.ttf);
+}
+
+body{
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	font-family: '游ゴシック';
+}
+
+hr{
+	border-top: 1px solid #000000;
+	width: 100%
+}
+
+img{
+	text-decoration:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:link{
+	color: #000000;
+}
+
+a:visited{
+	color: #000000;
+}
+
+a:hover{
+	color: #000000;
+} 
+
+a:active{
+	color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+	body{
+		width: 60%;
+	}
+	
+	#pageTop{
+		width: 100%;
+		position: relative;
+	}
+	
+	img{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.menu{
+		display: none;
+	}
+	
+	.menu-list{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.menu-list li{
+		border: 1px solid #333333;
+		border-radius: 5px;
+		padding: 1% 0 1% 0;
+		width: 16%;
+		text-align: center;
+		margin: 1%;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	
+	#pageBody{
+		font-size: 20px;
+	}
+	
+	#pageBody .logs-list dd{
+		border-radius: 5px;
+	}
+	
+	/*programs.html-----------------------*/
+	#pageBody .tabbox p.tabs{
+		font-size: 20px;
+	}
+	/*------------------------------------*/
+	
+	.footer{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	body{
+		width: 100%;
+	}
+	
+	#pageTop{
+		width: 100%;
+		position: relative;
+	}
+	
+	.logo img{
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.logo{
+		width: 80%;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.links{
+		width: 15%;
+		position: relative;
+		display: inline-block;
+	}
+
+	.links img{
+		width: 100%;
+		display: block;
+	}
+
+	.menu-list {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+		width: 300%;
+		font-size: 50px;
+		right: 0%;
+	}
+	
+	.menu-list li{
+		height: 8rem;
+		background-color: #FFFFFF;
+		border: 1px solid #333333;
+		
+		display: -webkit-box; /* safari, Chrome */
+		display: -moz-box;    /* Firefox */
+		display: -o-box;      /* Opera */
+		display: -ms-box;     /* IE */
+		
+		-webkit-box-align: center; /* safari, Chrome */
+		-moz-box-align: center;    /* Firefox */
+		-o-box-align: center;      /* Opera */
+		-ms-box-align: center;     /* IE */
+	}
+
+	.menu-list li a{
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.menu:hover + .menu-list, .menu-list:hover{
+		opacity: 1;
+		z-index: 10;
+	}
+	
+	.menu:hover .menu-list{
+		color: #507ea4;
+	}
+	
+	#pageBody{
+		font-size: xx-large;
+	}
+	
+	/*activitylog.html--------------------*/
+	#pageBody .logs-list dd{
+		border-radius: 3px;
+	}
+	/*------------------------------------*/
+	
+	/*programs.html-----------------------*/
+	#pageBody .tabbox p.tabs{
+		font-size: 15px;
+	}
+	/*------------------------------------*/
+	
+	.footer{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.logo img{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.logo{
+		width: 80%;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.links img{
+		width: 100%;
+		display: block;
+	}
+	
+	.links{
+		width: 17%;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.menu-list{
+		position: absolute;
+		opacity: 0;
+		z-index: 0;
+		width: 300%;
+		font-size: 20px;
+		right: 5%;
+	}
+	
+	#pageBody, .footer{
+		font-size: 15px;
+	}
+	
+	/*activitylog.html--------------------*/
+	#pageBody .logs-list dd{
+		border-radius: 3px;
+	}
+	/*------------------------------------*/
+	
+	/*programs.html-----------------------*/
+	#pageBody .tabbox p.tabs{
+		font-size: 2px;
+	}
+	
+	#pageBody .tabbox .tab dl dt p.title{
+		font-size: 10px;
+	}
+	/*------------------------------------*/
+	
+	.footer{
+		font-size: 10px;
+	}
+}
+
+#pageTop .links .menu-list li{
+	font-family: Cubic;
+}
+
+#pageTop .links .menu-list li a:link,
+#pageTop .links .menu-list li a:visited,
+#pageTop .links .menu-list li a:active{
+	color: #FF9900;
+}
+
+#pageTop .links .menu-list li a:hover{
+	color: #000000;
+}
+
+#pageBody{
+	width: 80%;
+	position: relative;
+	margin: 0 auto;
+}
+
+/*activitylog.html--------------------*/
+#pageBody .logs-list a:hover dd{
+	background-color: #CDCDCD;
+}
+
+#pageBody .logs-list dd{
+	border: 1px solid #333333;
+}
+/*------------------------------------*/
+
+/*programs.html-----------------------*/
+#pageBody .tabbox{
+	margin-top: 2%;
+	padding: 0;
+	width: 100%;
+}
+
+#pageBody .tabbox p.tabs{
+	margin: 0;
+	padding: 0;
+}
+
+#pageBody .tabbox p.tabs a{
+	display: block;
+	float: left;
+	width: 28%;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding: 3px;
+	text-align: center;
+	border-radius: 12px 12px 0 0;
+}
+
+#pageBody .tabbox p.tabs a.tab1,
+#pageBody .tabbox p.tabs a.tab2,
+#pageBody .tabbox p.tabs a.tab3{
+	color: white;
+	font-family: Cubic;
+}
+
+#pageBody .tabbox .tab{
+	overflow: auto;
+	clear: left;
+	margin: 0 0 2% 0;
+}
+
+#pageBody .tabbox #tab1,
+#pageBody .tabbox #tab2,
+#pageBody .tabbox #tab3{
+	border: 2px solid #4169E1;
+	border-radius: 4px;
+	background-color: #FAFFFF;
+}
+
+#pageBody .tabbox .tab dl{
+	margin: 1%;
+}
+
+#pageBody .tabbox .tab dl dt p.title{
+	display: inline-block;
+	font-weight: 900;
+}
+
+#pageBody .tabbox .tab dl dd{
+	width: 95%;
+	margin: 0 2.5% 0 2.5%;
+}
+
+#pageBody .tabbox .tab dl dd .procon{
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+#pageBody .tabbox .tab dl dd a{
+	color: #0000FF;
+	font-weight: 600;
+}
+
+#pageBody .tabbox .tab dl dd a:hover{
+	background-color: #AAAAAA;
+}
+
+#pageBody .tabbox .tab dl dd .procon dd{
+	width: 95%;
+	margin: 0 2.5% 0 2.5%;
+}
+/*------------------------------------*/
+
+/*gallery.html,gallery_BM.html--------*/
+#pageBody .info{
+	border: solid 2px black;
+}
+
+#pageBody .swiper-container{
+	text-align: center;
+	border: solid 2px black;
+}
+
+#pageBody .swiper-button-prev,
+#pageBody .swiper-button-next{
+	width: 5.5%;
+	background-color: white;
+	border: solid 2px;
+	border-radius: 50%;
+}
+/*------------------------------------*/
+
+/*links.html--------------------------*/
+#pageBody .link-list li{
+	width: 90%;
+	text-align: left;
+	margin: 2% 0 2% 5%;
+	padding: 1% 0 1% 1%;
+}
+
+#pageBody .link-list a:hover li{
+	border-radius: 4px;
+	background-color: #CDCDCD;
+}
+
+#pageBody .link-list img{
+	display: inline-block;
+	width: 20%;
+	vertical-align: middle;
+}
+
+#pageBody .link-list .link-text{
+	display: inline-block;
+}
+/*------------------------------------*/
+
+/*intro.html--------------------------*/
+#pageBody .box{
+	border: solid black;
+	padding: 2%;
+	background-color: rgba(255, 150, 0, 0.6);
+}
+
+#pageBody .box p{
+	font-weight: bolder;
+}
+/*------------------------------------*/
+
+.footer{
+	text-align: center;
+	font-size: small;
+	font-family: Georgia;
+}
