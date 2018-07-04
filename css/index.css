@@ -4,6 +4,11 @@
 	border: 0;
 }
 
+@font-face{
+	font-family: 'コーポレートロゴ丸';
+	src: url('font/corpmarugo_v1.ttf');
+}
+
 body{
 	background-color: #FFFFFF;
 	margin: 0 auto;
@@ -162,4 +167,8 @@ a{
 	text-align: center;
 	font-size: small;
 	font-family: Georgia;
+}
+
+.topics{
+	font-family: 'ポートレートロゴ丸';
 }
